@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: sunithapardeepmaykuber 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sunithapardeepmaykuber 
+    spec:
+      containers:
+        - name: sunithapardeepmaykuber 
+          image: sunitha12.azurecr.io/sunithapardeepmaykuber
+          ports:
+          - containerPort: 8080
